@@ -1,3 +1,37 @@
+// impmort React, {Component} from 'react';
+// import Field from '.field.js'
+// class ContactForm extends Component{
+//     constructor(props){
+//         super(props);
+//         this.state = {
+//             form: {
+//                 firstName: '',
+//                 lastName: '',
+//                 phone: '',
+//                 email: ''
+//             }
+//         }
+//         this.handleInputChange = this.handleInputChange.bind(this);
+//         this.handleSubmit = this.handleSubmit.bind(this);
+//         this.reset = this.reset.bind(this);
+//     }
+//     handleInputChange(event){
+//         const {value, name} = event.target;
+//         const{form} = this.state;
+//         form[name] = value;
+//         this.setState({
+//             form: {
+//                 firstName: 
+//             }
+//         })
+//     }
+// }
+
+
+
+
+
+
 import React, { Component } from 'react';
 import Field from './field.js';
 
@@ -21,7 +55,7 @@ class ContactForm extends Component {
 
     handleInputChange(event){
         const { value, name } = event.target;
-
+console.log(event.target.name)
         const { form } = this.state;
 
         form[name] = value;
